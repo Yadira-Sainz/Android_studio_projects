@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCodigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="Código del producto"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonBaja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_bg"
+        android:padding="16dp"
+        android:text="Baja"
+        android:textColor="#FFFFFF"
+        style="@style/MyButtonStyle"
+        app:layout_constraintBottom_toTopOf="@+id/botonModificacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonAlta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_bg"
+        android:padding="16dp"
+        android:text="Alta"
+        android:textColor="#FFFFFF"
+        style="@style/MyButtonStyle"
+        app:layout_constraintBottom_toTopOf="@+id/botonConsulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberSigned"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/botonAlta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonModificacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_bg"
+        android:padding="16dp"
+        android:text="Modificación"
+        android:textColor="#FFFFFF"
+        style="@style/MyButtonStyle"
+        app:layout_constraintBottom_toTopOf="@+id/botonLimpiar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonConsulta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_bg"
+        android:padding="16dp"
+        android:text="Consulta"
+        android:textColor="#FFFFFF"
+        style="@style/MyButtonStyle"
+        app:layout_constraintBottom_toTopOf="@+id/botonBaja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/botonLimpiar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button_bg"
+        android:padding="16dp"
+        android:text="Limpiar"
+        android:textColor="#FFFFFF"
+        style="@style/MyButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint="Descripción"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPrecio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

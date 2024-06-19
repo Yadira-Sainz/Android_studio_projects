@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="#E5DDE6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversor de Moneda"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleText"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad a convertir"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/titleText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/conversionRateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tasa de conversión (Ej. 20)"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/amountEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conversionRateEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerFrom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spinnerTo"
+        android:layout_marginTop="50dp"
+        android:text="Convertir"
+        android:backgroundTint="#A788AB" />
+
+</RelativeLayout>
